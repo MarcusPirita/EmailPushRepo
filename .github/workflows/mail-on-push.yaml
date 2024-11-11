@@ -12,8 +12,10 @@ jobs:
           password: ${{ secrets.MAIL_PASSWORD }}
           subject: Send Mail
           body: "1€ga F90 M5 hehe pRäNkS" +
-          ${{github.event.pusher.name}} + "repost" +
-          ${{github.repository}} + " sõnumiga " +
+          ${{github.event.pusher.name}} + 
+          "repost" +
+          ${{github.repository}} + 
+          "sõnumiga" +
           ${{github.event.head_commit.message}}
           to: piritamarcus@gmail.com
           from: Github actions
