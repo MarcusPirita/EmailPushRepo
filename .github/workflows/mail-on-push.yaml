@@ -10,7 +10,7 @@ push:
             server_port: 465
             username: ${{ secrets.MAIL_USERNAME }}
             password: ${{ secrets.MAIL_PASSWORD }}
-            subject: Send Mail
-            body: "1€ F90 M5 hehe pRäNkS" + ${{github.event.pusher.name}} + "repost" + ${{github.repository}} + "sõnumiga" + ${{github.event.head_commit.message}}
+            subject: "Send Mail"
+            body: "1€ F90 M5 hehe pRäNkS + ${{github.event.pusher.name}} + repost + ${{github.repository}} + sõnumiga + ${{github.event.head_commit.message}}"
             to: piritamarcus@gmail.com
-            from: Github actions
+            from: "Github actions"
