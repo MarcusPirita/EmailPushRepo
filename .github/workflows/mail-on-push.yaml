@@ -1,4 +1,4 @@
-on: [push]
+push:
   jobs:
     mail_on_push:
       runs-on: ubuntu-latest
